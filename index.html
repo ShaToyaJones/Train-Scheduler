@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- moment.js -->
+	<script scr="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/locale/af.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+  	<meta charset="utf-8">
+	<title>Train Scheduler</title>
+
+</head>
+
+<body>
+
+<!-- Jumbotron container/title -->
+	<div class="container">
+		<div class="Jumbotron">
+			<h1 class="panel-title">Train Scheduler</h1>
+		</div>
+		<br><br>
+
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<div class="panel panel-primary">
+	                <div class="panel-heading">
+	                	<h3 class="panel-title" id="trainContainer">Train Container</h3>
+	                </div>
+<!-- Second panel -->
+	<!-- <div class="panel panel-default"> -->
+				<div class="panel-body">
+	<!-- Table to contain input. -->
+		<table class="table" id="tableTrain" style="width: 100%">
+			<tr>
+				<th>Train Name</th> 
+				<th>Destination</th>	
+				<th>Arrival Time</th>
+				<th>Departure Time</th>
+				<th>Frequency</th>
+				<th>Minutes Away</th>
+				<th>Next Arrival</th>			
+			</tr>
+		</table>
+	</div>
+</div>
+
+<!-- Form to enter in new trains. --> 
+<div class="panel panel-default">
+	<div class="panel panel-heading">
+		<h4 class="panel-title" id="newInfo">Enter in New Train Info</h4>
+	</div>
+
+	<div class="panel panel-body">
+		<form>
+			<div class="form-group">
+			<label>Train Name:</label> 
+			<input type="text" class="form-control" id="trainName">
+			</div>
+
+			<div class="form-group">
+			<label>Destination:</label> 
+			<input type="text" class="form-control" id="destination">
+			</div>
+
+			<div class="form-group">
+			<label>Arrival Time:</label> 
+			<input type="text" class="form-control" id="arrivalTime">
+			</div>
+
+			<div class="form-group">
+			<label>Departure Time:</label> 
+			<input type="text" class="form-control" id="departureTime">
+			</div>
+
+			<div class="form-group">
+			<label>Frequency:</label> 
+			<input type="text" class="form-control" id="frequency">
+			</div>
+
+			<div class="form-group">
+			<label>Minutes Away:</label> 
+			<input type="text" class="form-control" id="minutesAway">
+			</div>
+
+			<div class="form-group">			
+			<label>Next Arrival:</label> 
+			<input type="text" class="form-control" id="nextArrival">
+			</div>
+			<br>
+		
+		<!-- Button used to submit data. -->
+		<button type="submit" class="btn btn-default" id="addInfo">Submit</button>
+	</form>
+		
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- <script src="jquery-3.2.1.min.js"></script> -->
+<script src="https://code.jquery.com/jquery.js"></script>
+
+<!-- javascript tag -->
+<script type="text/javascript"></script>
+
+</body>
+</html>
